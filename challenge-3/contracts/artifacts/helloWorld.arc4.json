@@ -1,0 +1,25 @@
+{
+  "name": "helloWorld",
+  "desc": "",
+  "methods": [
+    {
+      "name": "helloWorld",
+      "args": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "createApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    }
+  ]
+}
