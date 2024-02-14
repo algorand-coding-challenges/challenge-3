@@ -1,4 +1,4 @@
-# Algorand Fix The Bug Challenge #3
+# Algorand Coding Challenge #3: Fix The Bug!
 
 > Ensure you review the README for comprehensive instructions on how to participate in this challenge.
 
@@ -8,45 +8,22 @@ This project includes a simple `helloWorld` smart contract written with [TEALScr
 
 The `index.ts` file in the root level is a script that deploys the `helloWorld` smart contract and calls the `helloWorld` method.
 
-However, if you try to run the `index.ts` file with `bun run index.ts` after cloning this repo, it will fail.
+However, if you try to run the `index.ts` file after going into the `challenge` directory, opening Docker Desktop, and then running:
+
+```bash
+algokit bootstrap all
+algokit localnet start
+npm run start
+```
+it will fail.
 
 **Find out what is wrong and fix the bug.**
-
-## Prerequisites
-1. [Install Bun](https://bun.sh/docs/installation). Bun was used because it can [directly run TypeScript files.](https://bun.sh/docs/runtime/typescript)
-```bash
-# with install script (recommended)
-curl -fsSL https://bun.sh/install | bash
-
-# with npm
-npm install -g bun
-
-# with Homebrew
-brew tap oven-sh/bun
-brew install bun
-
-# with Docker
-docker pull oven/bun
-docker run --rm --init --ulimit memlock=-1:-1 oven/bun
-```
-1. [Install AlgoKit](https://github.com/algorandfoundation/algokit-cli/tree/main?tab=readme-ov-file#install).
-2. Install [Docker](https://www.docker.com/products/docker-desktop/). It is used to run a local Algorand network for development.
 
 ## Instructions
 
 ### 1. Set up your development environment
-1. [Fork this repository.](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
-2. Go to the directory you want to work in with your terminal and clone the forked repository
-```bash
-cd [DIRECTORY_OF_YOUR_CHOICE]
-git clone [FORKED_REPO_URL]
-```
-3. Open the cloned repository with the code editor of your choosing. The below code example works only if you are using VSCode as your default editor and have the `code .` shorthand set up.
-```bash
-cd [CLONED_REPO]
-code . 
-```
-4. Install dependencies using AlgoKit. Run the below command inside of the `challenge-3` folder.
+
+1. Install dependencies and autogenerate the `.env` file using AlgoKit. Run the below command inside of the `challenge` folder.
 ```bash
 algokit bootstrap all
 ```
@@ -54,11 +31,12 @@ algokit bootstrap all
 Now you are ready to fix the bug!
 
 ### 2. Steps to fix the bug
+
 1. Go to `./contracts/helloWorld.algo.ts` to read the `helloWorld` TEALScript smart contract and understand what it does.
 2. Go to `./index.ts` and read the comments on the file and fix the bug!
-3. After fixing the bug run: 
+3. After fixing the bug run the below command inside the `challenge` directory: 
 ```bash
-bun run index.ts
+npm run start
 ```
 and if you see something like the image below, you have successfully fixed the bug! Congratulations 😆
 <img width="1379" alt="image" src="https://github.com/algorand-devrel/fix-the-bug-private/assets/52557585/cadebf91-503d-46fb-a575-e6305e1719a0">
