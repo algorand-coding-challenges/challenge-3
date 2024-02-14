@@ -1,12 +1,15 @@
 {
   "scripts": {
     "generate-client": "algokit generate client contracts/artifacts/ --language typescript  --output contracts/clients/{contract_name}Client.ts",
-    "compile-contract": "tealscript contracts/*.algo.ts contracts/artifacts"
+    "compile-contract": "tealscript contracts/*.algo.ts contracts/artifacts",
+    "start": "tsx -r dotenv/config index.ts"
   },
   "dependencies": {
     "@algorandfoundation/algokit-utils": "^5.3.2",
     "@algorandfoundation/tealscript": "^0.79.0",
-    "algosdk": "^2.7.0"
+    "algosdk": "^2.7.0",
+    "dotenv": "^16.4.4",
+    "tsx": "^4.7.1"
   },
   "name": "challenge-3",
   "module": "index.ts",
