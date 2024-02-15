@@ -15,16 +15,16 @@ import type {
   CoreAppCallArgs,
   RawAppCallArgs,
   TealTemplateParams,
-} from '@algorandfoundation/algokit-utils/types/app'
+} from '../../node_modules/@algorandfoundation/algokit-utils/types/app'
 import type {
   AppClientCallCoreParams,
   AppClientCompilationParams,
   AppClientDeployCoreParams,
   AppDetails,
   ApplicationClient,
-} from '@algorandfoundation/algokit-utils/types/app-client'
+} from '../../node_modules/@algorandfoundation/algokit-utils/types/app-client'
 import type { AppSpec } from '@algorandfoundation/algokit-utils/types/app-spec'
-import type { SendTransactionResult, TransactionToSign, SendTransactionFrom, SendTransactionParams } from '@algorandfoundation/algokit-utils/types/transaction'
+import type { SendTransactionResult, TransactionToSign, SendTransactionFrom, SendTransactionParams } from '../../node_modules/@algorandfoundation/algokit-utils/types/transaction'
 import type { ABIResult, TransactionWithSigner } from 'algosdk'
 import { OnApplicationComplete, Transaction, AtomicTransactionComposer, modelsv2 } from 'algosdk'
 import algosdk from 'algosdk'
