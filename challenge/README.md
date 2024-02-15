@@ -32,9 +32,10 @@ Now you are ready to fix the bug!
 
 ### 2. Steps to fix the bug
 
-1. Go to `./contracts/helloWorld.algo.ts` to read the `helloWorld` TEALScript smart contract and understand what it does.
-2. Go to `./index.ts` and read the comments on the file and fix the bug!
-3. After fixing the bug run the below command inside the `challenge` directory: 
+1. Make sure Algorand localnet is running. If not, open Docker Desktop and launch Algorand localnet with `algokit localnet start`.
+2. Go to `./contracts/helloWorld.algo.ts` to read the `helloWorld` TEALScript smart contract and understand what it does.
+3. Go to `./index.ts` and read the comments on the file and fix the bug!
+4. After fixing the bug run the below command inside the `challenge` directory: 
 ```bash
 npm run start
 ```
