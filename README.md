@@ -65,7 +65,7 @@ Here is a hint for you: https://developer.algorand.org/docs/get-details/algokit/
 2. Inside the PR include:
    1. What was the problem?
    2. How did you solve the problem?
-   3. Screenshot of your terminal showing the test cases passing. <img width="558" alt="image" src="https://github.com/algorand-devrel/fix-the-bug-private/assets/52557585/3017375c-f85a-42f1-b6e5-262b4560f96d">
+   3. A screenshot of your terminal that shows the console.log <img width="1379" alt="image" src="https://github.com/algorand-devrel/fix-the-bug-private/assets/52557585/cadebf91-503d-46fb-a575-e6305e1719a0">
 
 ## Checkpoint 5: 🏆 Claim your certificate of completion NFT! 🎓
 
