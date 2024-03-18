@@ -21,12 +21,12 @@ const appClient = new HelloWorldClient(
     sender: deployer,
     creatorAddress: deployer,
   },
-  indexer
+  indexer,
 )
 
 await appClient.create.createApplication({});
 
-// TODO: change YOUR_NAME to your name
+// TODO: change YOUR_NAME to your name or nickname
 const result = await appClient.helloWorld({name: "YOUR_NAME"}, {sendParams: {suppressLog: true}})
 
 console.log(result.return)

@@ -5,8 +5,8 @@
     "start": "tsx -r dotenv/config index.ts"
   },
   "dependencies": {
-    "@algorandfoundation/algokit-utils": "^5.5.1",
-    "@algorandfoundation/tealscript": "^0.86.0",
+    "@algorandfoundation/algokit-utils": "^5.6.0",
+    "@algorandfoundation/tealscript": "^0.88.0",
     "algosdk": "^2.7.0",
     "dotenv": "^16.4.4",
     "tsx": "^4.7.1"

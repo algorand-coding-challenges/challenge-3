@@ -26,7 +26,10 @@ import type {
 import type { AppSpec } from '@algorandfoundation/algokit-utils/types/app-spec'
 import type { SendTransactionResult, TransactionToSign, SendTransactionFrom, SendTransactionParams } from '@algorandfoundation/algokit-utils/types/transaction'
 import type { ABIResult, TransactionWithSigner } from 'algosdk'
-import { Algodv2, OnApplicationComplete, Transaction, AtomicTransactionComposer, modelsv2 } from 'algosdk'
+import algosdk from 'algosdk'
+import { OnApplicationComplete, Transaction, AtomicTransactionComposer, modelsv2 } from 'algosdk'
+import Algodv2 = algosdk.Algodv2
+
 export const APP_SPEC: AppSpec = {
   "hints": {
     "helloWorld(string)string": {
