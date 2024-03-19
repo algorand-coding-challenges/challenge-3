@@ -19,14 +19,14 @@ const appClient = new HelloWorldClient(
     resolveBy: 'creatorAndName',
     findExistingUsing: indexer,
     sender: deployer,
-    creatorAddress: deployer,
+    creatorAddress: deployer.addr, // XXX: Use deploy address, not Account object
   },
-  indexer,
+  algod, // XXX: Use the algod client instead of indexer client
 )
 
-await appClient.create.createApplication({});
+await appClient.create.createApplication({})
 
-// TODO: change YOUR_NAME to your name or nickname
-const result = await appClient.helloWorld({name: "YOUR_NAME"}, {sendParams: {suppressLog: true}})
+// XXX: change YOUR_NAME to your name or nickname
+const result = await appClient.helloWorld({name: "No-Cash-7970"}, {sendParams: {suppressLog: true}})
 
 console.log(result.return)
