@@ -19,7 +19,7 @@ const appClient = new HelloWorldClient(
     resolveBy: 'creatorAndName',
     findExistingUsing: indexer,
     sender: deployer,
-    creatorAddress: deployer,
+    creatorAddress: deployer.addr,
   },
   algod,
 )
