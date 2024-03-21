@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "generate-client": "algokit generate client contracts/artifacts/ --language typescript  --output contracts/clients/{contract_name}Client.ts",
+    "generate-client": "algokit generate client contracts/artifacts/ --language typescript  --output contracts/clients/helloWorldClient.ts",
     "compile-contract": "tealscript contracts/*.algo.ts contracts/artifacts",
     "start": "tsx -r dotenv/config index.ts"
   },
