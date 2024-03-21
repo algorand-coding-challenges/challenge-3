@@ -57,7 +57,8 @@ Now you are ready to fix the bug!
 npm run start
 ```
 If you see something like the image below, you have successfully fixed the bug! Congratulations 😆
-<img width="1379" alt="image" src="https://github.com/algorand-devrel/fix-the-bug-private/assets/52557585/cadebf91-503d-46fb-a575-e6305e1719a0">
+<img width="827" alt="image" src="https://github.com/algorand-coding-challenges/challenge-3/assets/52557585/662d86ea-4d8b-4a5f-95c1-b228cbbadd9b">
+
 
 **😰 Are you struggling?**
 Here is a hint for you: https://developer.algorand.org/docs/get-details/algokit/features/generate/?from_query=algokit%20utils#1-typed-clients
@@ -68,7 +69,7 @@ Here is a hint for you: https://developer.algorand.org/docs/get-details/algokit/
 2. Inside the PR include:
    1. What was the problem?
    2. How did you solve the problem?
-   3. A screenshot of your terminal that shows the console.log <img width="1379" alt="image" src="https://github.com/algorand-devrel/fix-the-bug-private/assets/52557585/cadebf91-503d-46fb-a575-e6305e1719a0">
+   3. A screenshot of your terminal that shows the console.log <img width="827" alt="image" src="https://github.com/algorand-coding-challenges/challenge-3/assets/52557585/69dae6bd-f7cd-431a-b29a-71af3d534c9b">
 
 ## Checkpoint 5: 🏆 Claim your certificate of completion NFT! 🎓
 
