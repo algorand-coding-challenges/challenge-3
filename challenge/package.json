@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@algorandfoundation/algokit-utils": "^5.6.0",
-    "@algorandfoundation/tealscript": "^0.88.0",
+    "@algorandfoundation/tealscript": "^0.88.1",
     "algosdk": "^2.7.0",
     "dotenv": "^16.4.4",
     "tsx": "^4.7.1"
