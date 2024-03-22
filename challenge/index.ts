@@ -1,5 +1,5 @@
-import { HelloWorldClient } from './contracts/clients/helloWorldClient'
 import * as algokit from '@algorandfoundation/algokit-utils'
+import { HelloWorldClient } from './contracts/clients/helloWorldClient'
 
 const algod = algokit.getAlgoClient()
 const indexer = algokit.getAlgoIndexerClient()
@@ -19,14 +19,14 @@ const appClient = new HelloWorldClient(
     resolveBy: 'creatorAndName',
     findExistingUsing: indexer,
     sender: deployer,
-    creatorAddress: deployer,
+    creatorAddress: deployer.addr,
   },
-  indexer,
+  algod,
 )
 
 await appClient.create.createApplication({});
 
 // TODO: change YOUR_NAME to your name or nickname
-const result = await appClient.helloWorld({name: "YOUR_NAME"}, {sendParams: {suppressLog: true}})
+const result = await appClient.helloWorld({name: "SirSushi"}, {sendParams: {suppressLog: true}})
 
 console.log(result.return)
