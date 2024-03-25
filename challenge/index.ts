@@ -27,6 +27,6 @@ const appClient = new HelloWorldClient(
 await appClient.create.createApplication({});
 
 // TODO: change YOUR_NAME to your name or nickname
-const result = await appClient.helloWorld({name: "YOUR_NAME"}, {sendParams: {suppressLog: true}})
+const result = await appClient.helloWorld({name: "Vibhas"}, {sendParams: {suppressLog: true}})
 
 console.log(result.return)
