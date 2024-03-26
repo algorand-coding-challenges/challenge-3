@@ -1,10 +1,10 @@
-import { HelloWorldClient } from './contracts/clients/helloWorldClient'
-import * as algokit from '@algorandfoundation/algokit-utils'
+import * as algokit from "@algorandfoundation/algokit-utils";
+import { HelloWorldClient } from "./contracts/clients/helloWorldClient";
 
-const algod = algokit.getAlgoClient()
-const indexer = algokit.getAlgoIndexerClient()
-const kmd = algokit.getAlgoKmdClient()
-const deployer = await algokit.getLocalNetDispenserAccount(algod, kmd)
+const algod = algokit.getAlgoClient();
+const indexer = algokit.getAlgoIndexerClient();
+const kmd = algokit.getAlgoKmdClient();
+const deployer = await algokit.getLocalNetDispenserAccount(algod, kmd);
 
 /*
 FIX THE BUG:
@@ -16,17 +16,20 @@ Hint: Read the Typed clients section in the documentation: https://developer.alg
 */
 const appClient = new HelloWorldClient(
   {
-    resolveBy: 'creatorAndName',
+    resolveBy: "creatorAndName",
     findExistingUsing: indexer,
     sender: deployer,
-    creatorAddress: deployer,
+    creatorAddress: deployer.addr,
   },
-  indexer,
-)
+  algod
+);
 
 await appClient.create.createApplication({});
 
 // TODO: change YOUR_NAME to your name or nickname
-const result = await appClient.helloWorld({name: "YOUR_NAME"}, {sendParams: {suppressLog: true}})
+const result = await appClient.helloWorld(
+  { name: "0xdod" },
+  { sendParams: { suppressLog: true } }
+);
 
-console.log(result.return)
+console.log(result.return);
