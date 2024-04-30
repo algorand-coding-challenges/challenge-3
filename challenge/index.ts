@@ -19,8 +19,10 @@ const appClient = new HelloWorldClient(
     resolveBy: 'creatorAndName',
     findExistingUsing: indexer,
     sender: deployer,
+    //changed the creator adress by calling the addr atribute 
     creatorAddress: deployer.addr,
   },
+  // removed the indexer method and replaced it with algod.
   algod,
 )
 
